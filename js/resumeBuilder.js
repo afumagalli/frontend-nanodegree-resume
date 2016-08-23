@@ -81,6 +81,8 @@ var work = {
             $(".work-entry:last").append(formattedEmployerTitle);
             var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
             $(".work-entry:last").append(formattedDates);
+            var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
+            $(".work-entry:last").append(formattedLocation);
             var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
             $(".work-entry:last").append(formattedDescription);
         }
