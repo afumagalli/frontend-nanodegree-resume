@@ -2,7 +2,7 @@
 
 var bio = {
     name: "Anthony Fumagalli",
-    role: "Computer science educator",
+    role: "Full stack developer",
     contacts: {
         mobile: "(619) 341-9571",
         email: "anthony.fumagalli@gmail.com",
@@ -12,9 +12,9 @@ var bio = {
     },
     welcomeMessage: "Welcome to my resume",
     skills: [
-        "programming", "web development", "teaching"
+        "Python", "JavaScript", "C", "Google App Engine", "PostgreSQL", "Linux server administration", "Configuration management"
     ],
-    bioPic: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALBAAAAJDFmNjlhOTI4LTA0ZDAtNGZlNi04YWY3LWFhYzA2ZDUxNjZjNg.jpg",
+    bioPic: "images/anthony.jpg",
     display: function displayBio() {
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
         $("#header").append(formattedName);
