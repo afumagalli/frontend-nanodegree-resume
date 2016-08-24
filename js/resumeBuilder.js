@@ -96,15 +96,6 @@ var work = {
 var projects = {
     projects: [
         {
-            title: "Intro to Programming Notes",
-            dates: "July 2015",
-            description: "My first webpage, a collection of notes for Udacity's Intro to Programming Nanodegree.",
-            images: [
-                "images/ipnd.png"
-            ],
-            url: "http://ipnd-notes.appspot.com/"
-        },
-        {
             title: "Discourse Reader",
             dates: "2015-16",
             description: "A tool used by Udacity coaches to help manage the Udacity Discussion Forums.",
@@ -129,6 +120,13 @@ var projects = {
             title: "Mission Taqueria Map",
             dates: "2016",
             description: "A map of taquerias in San Francisco's Mission District.",
+            images: [],
+            url: "#"
+        },
+        {
+            title: "Robot Tutor",
+            dates: "Spring 2015",
+            description: "My undergraduate senior project. An implementation of a Nao social robot to study help-seeking behaviors in children.",
             images: [],
             url: "#"
         }
