@@ -55,27 +55,31 @@ var work = {
             title: "Course manager",
             location: "Mountain View, CA",
             dates: "July 2015 - present",
-            description: "I support students in Udacity's Intro to Programming Nanodegree by hosting live office hours, webcasts, and tutoring sessions. I am also the point person on content for the Nanodegree and work with course developers and project managers to create new content and improve existing course materials."
+            description: "I support students in Udacity's Intro to Programming Nanodegree by hosting live office hours, webcasts, and tutoring sessions. I am also the point person on content for the Nanodegree and work with course developers and project managers to create new content and improve existing course materials.",
+            url: "http://www.udacity.com/"
         },
         {
             employer: "Dwight Hall at Yale",
             title: "Co-coordinator, Public School Interns",
             location: "New Haven, CT",
             dates: "August 2012 - May 2015",
-            description: "After serving as a Public School Intern for two years by volunteering in classrooms and conducting after school tutoring, I then coordinated the program during my senior year. We had 14 interns working in 14 New Haven Public Schools with a focus on engaging students with current issues in public education."
+            description: "After serving as a Public School Intern for two years by volunteering in classrooms and conducting after school tutoring, I then coordinated the program during my senior year. We had 14 interns working in 14 New Haven Public Schools with a focus on engaging students with current issues in public education.",
+            url: "http://www.dwighthall.org/"
         },
         {
             employer: "Recovery School District",
             title: "Education policy intern",
             location: "New Orleans, LA",
             dates: "June 2014 - August 2014",
-            description: "I worked with Executive Director of Policy Holly Reid to prepare the Recovery School District for its first year as an all-charter school district. My projects included writing policy reports on early childhood education and tracking school renovation funding."
+            description: "I worked with Executive Director of Policy Holly Reid to prepare the Recovery School District for its first year as an all-charter school district. My projects included writing policy reports on early childhood education and tracking school renovation funding.",
+            url: "http://www.rsdla.gov/"
         }
     ],
     display: function displayWork() {
         for (var i = 0; i < work.jobs.length; i++) {
             $("#workExperience").append(HTMLworkStart);
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+            formattedEmployer = formattedEmployer.replace("#", work.jobs[i].url);
             var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
             var formattedEmployerTitle = formattedEmployer + formattedTitle;
             $(".work-entry:last").append(formattedEmployerTitle);
@@ -94,16 +98,18 @@ var projects = {
         {
             title: "Intro to Programming Notes",
             dates: "July 2015",
-            description: "My first webpage, a collection of notes for Udacity's Intro to Programming Nanodegree <a href='http://ipnd-notes.appspot.com/'>Click here to check it out</a>",
+            description: "My first webpage, a collection of notes for Udacity's Intro to Programming Nanodegree.",
             images: [
                 "images/ipnd.png"
-            ]
+            ],
+            url: "http://ipnd-notes.appspot.com/"
         }
     ],
     display: function displayProjects() {
         for (var i = 0; i < projects.projects.length; i++) {
             $("#projects").append(HTMLprojectStart);
             var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+            formattedTitle = formattedTitle.replace("#", projects.projects[i].url);
             $(".project-entry:last").append(formattedTitle);
             var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
             $(".project-entry:last").append(formattedDates);
@@ -145,6 +151,7 @@ var education = {
         for (var i = 0; i < education.schools.length; i++) {
             $("#education").append(HTMLschoolStart);
             var formattedName = HTMLschoolName.replace("%data%", education.schools[i].name);
+            formattedName = formattedName.replace("#", education.schools[i].url);
             var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
             var formattedNameDegree = formattedName + formattedDegree;
             $(".education-entry:last").append(formattedNameDegree);
