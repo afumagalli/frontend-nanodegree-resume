@@ -41,9 +41,11 @@ h2 {
 
 h3 {
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
   color: #2e4272;
   line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
 
 h4 {
