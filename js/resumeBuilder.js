@@ -72,7 +72,7 @@ var work = {
             location: "New Orleans, LA",
             dates: "June 2014 - August 2014",
             description: "I worked with Executive Director of Policy Holly Reid to prepare the Recovery School District for its first year as an all-charter school district. My projects included writing policy reports on early childhood education and tracking school renovation funding.",
-            url: "http://www.rsdla.gov/"
+            url: "http://www.rsdla.net/"
         }
     ],
     display: function displayWork() {
@@ -99,36 +99,36 @@ var projects = {
             title: "Discourse Reader",
             dates: "2015-16",
             description: "A tool used by Udacity coaches to help manage the Udacity Discussion Forums.",
-            images: [],
+            images: ["images/discourse-reader.png"],
             url: "http://www.discourse-reader.appspot.com/"
         },
         {
             title: "The Smoking Rooster",
             dates: "2016",
             description: "My personal website showcasing projects I've worked on. Also contains a (rarely-updated) blog.",
-            images: [],
+            images: ["images/smoking-rooster.png"],
             url: "http://www.smoking-rooster.appspot.com/"
         },
         {
             title: "Pokémon Hangman API",
             dates: "2016",
             description: "An endpoints API containing the logic for a hangman game.",
-            images: [],
-            url: "#"
+            images: ["images/pokemon-hangman.png"],
+            url: "http://www.pokemon-hangman.appspot.com/_ah/api/explorer"
         },
         {
             title: "Mission Taqueria Map",
             dates: "2016",
             description: "A map of taquerias in San Francisco's Mission District.",
-            images: [],
-            url: "#"
+            images: ["images/mission-map.png"],
+            url: "https://github.com/afumagalli/neighborhood-map"
         },
         {
             title: "Robot Tutor",
             dates: "Spring 2015",
             description: "My undergraduate senior project. An implementation of a Nao social robot to study help-seeking behaviors in children.",
-            images: [],
-            url: "#"
+            images: ["images/nao.jpg"],
+            url: "https://github.com/afumagalli/Robot-Tutor-Project"
         }
     ],
     display: function displayProjects() {

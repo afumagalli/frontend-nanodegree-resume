@@ -129,6 +129,10 @@ a {
   background-color: #2e4272;
 }
 
+.project-image {
+  width: 300px;
+}
+
 /* TODO: Replace with image later */
 #header {
   background-color: #2e4272;
