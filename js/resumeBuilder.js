@@ -103,6 +103,34 @@ var projects = {
                 "images/ipnd.png"
             ],
             url: "http://ipnd-notes.appspot.com/"
+        },
+        {
+            title: "Discourse Reader",
+            dates: "2015-16",
+            description: "A tool used by Udacity coaches to help manage the Udacity Discussion Forums.",
+            images: [],
+            url: "http://www.discourse-reader.appspot.com/"
+        },
+        {
+            title: "The Smoking Rooster",
+            dates: "2016",
+            description: "My personal website showcasing projects I've worked on. Also contains a (rarely-updated) blog.",
+            images: [],
+            url: "http://www.smoking-rooster.appspot.com/"
+        },
+        {
+            title: "Pokémon Hangman API",
+            dates: "2016",
+            description: "An endpoints API containing the logic for a hangman game.",
+            images: [],
+            url: "#"
+        },
+        {
+            title: "Mission Taqueria Map",
+            dates: "2016",
+            description: "A map of taquerias in San Francisco's Mission District.",
+            images: [],
+            url: "#"
         }
     ],
     display: function displayProjects() {
@@ -135,16 +163,16 @@ var education = {
     ],
     onlineCourses: [
         {
-            title: "Front-End Web Developer Nanodegree",
-            school: "Udacity",
-            dates: "2015",
-            url: "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-        },
-        {
             title: "Full Stack Web Developer Nanodegree",
             school: "Udacity",
-            dates: "2015",
+            dates: "2016",
             url: "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
+        },
+        {
+            title: "Front-End Web Developer Nanodegree",
+            school: "Udacity",
+            dates: "2016",
+            url: "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
         }
     ],
     display: function displayEducation() {
